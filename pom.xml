@@ -95,7 +95,7 @@
                 <version>1.12.7</version>
             </dependency>
 
-            <!-- Auto-service library (annotation processing) -->
+            <!-- Auto-service library -->
             <dependency>
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service</artifactId>
