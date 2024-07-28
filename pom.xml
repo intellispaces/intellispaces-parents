@@ -3,7 +3,7 @@
     <description>Intellispaces Framework parent pom</description>
 
     <groupId>intellispaces</groupId>
-    <artifactId>intellispacesframework-parent-pom</artifactId>
+    <artifactId>intellispaces-parent-pom</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
