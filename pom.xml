@@ -81,13 +81,6 @@
                 <version>2.13.0</version>
             </dependency>
 
-            <!-- Lombok -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.22</version>
-            </dependency>
-
             <!-- Reflections -->
             <dependency>
                 <groupId>org.reflections</groupId>
