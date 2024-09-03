@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>Intellispaces Framework parent pom</description>
 
-    <groupId>intellispaces</groupId>
+    <groupId>intellispaces-commons</groupId>
     <artifactId>intellispaces-parent-pom</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
