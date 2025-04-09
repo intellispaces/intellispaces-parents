@@ -8,12 +8,6 @@
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <project.source.encoding>UTF-8</project.source.encoding>
-        <project.java.version>17</project.java.version>
-        <maven.compiler.source>${project.java.version}</maven.compiler.source>
-    </properties>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -24,9 +18,9 @@
                     <configuration>
                         <parameters>true</parameters>
                         <testCompilerArgument>-parameters</testCompilerArgument>
-                        <source>${project.java.version}</source>
-                        <target>${project.java.version}</target>
-                        <encoding>${project.source.encoding}</encoding>
+                        <source>17</source>
+                        <target>17</target>
+                        <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
                 <plugin>
