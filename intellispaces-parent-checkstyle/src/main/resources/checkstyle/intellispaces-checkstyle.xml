@@ -237,32 +237,32 @@
              value="Member name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="ParameterName">
-      <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
       <message key="name.invalidPattern"
              value="Parameter name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="LambdaParameterName">
-      <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
       <message key="name.invalidPattern"
              value="Lambda parameter name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="CatchParameterName">
-      <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
       <message key="name.invalidPattern"
              value="Catch parameter name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="LocalVariableName">
-      <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
       <message key="name.invalidPattern"
              value="Local variable name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="PatternVariableName">
-      <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
+      <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
       <message key="name.invalidPattern"
              value="Pattern variable name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="ClassTypeParameterName">
-      <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+      <property name="format" value="(^[A-Z][0-9]*$)|(^[A-Z][a-zA-Z0-9]+Type$)"/>
       <message key="name.invalidPattern"
              value="Class type name ''{0}'' must match pattern ''{1}''."/>
     </module>
@@ -272,17 +272,17 @@
                value="Record component name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="RecordTypeParameterName">
-      <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+      <property name="format" value="(^[A-Z][0-9]*$)|(^[A-Z][a-zA-Z0-9]+Type$)"/>
       <message key="name.invalidPattern"
                value="Record type name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="MethodTypeParameterName">
-      <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+      <property name="format" value="(^[A-Z][0-9]*$)|(^[A-Z][a-zA-Z0-9]+Type$)"/>
       <message key="name.invalidPattern"
              value="Method type name ''{0}'' must match pattern ''{1}''."/>
     </module>
     <module name="InterfaceTypeParameterName">
-      <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+      <property name="format" value="(^[A-Z][0-9]*$)|(^[A-Z][a-zA-Z0-9]+Type$)"/>
       <message key="name.invalidPattern"
              value="Interface type name ''{0}'' must match pattern ''{1}''."/>
     </module>
@@ -325,10 +325,10 @@
     <module name="ConstructorsDeclarationGrouping"/>
     <module name="VariableDeclarationUsageDistance"/>
     <module name="CustomImportOrder">
-      <property name="sortImportsInGroupAlphabetically" value="true"/>
+      <property name="customImportOrderRules" value="STANDARD_JAVA_PACKAGE, THIRD_PARTY_PACKAGE, SPECIAL_IMPORTS, STATIC"/>
+      <property name="specialImportsRegExp" value="^tech\.intellispaces\."/>
       <property name="separateLineBetweenGroups" value="true"/>
-      <property name="customImportOrderRules" value="STATIC###THIRD_PARTY_PACKAGE"/>
-      <property name="tokens" value="IMPORT, STATIC_IMPORT, PACKAGE_DEF"/>
+      <property name="sortImportsInGroupAlphabetically" value="true"/>
     </module>
     <module name="MethodParamPad">
       <property name="tokens"
