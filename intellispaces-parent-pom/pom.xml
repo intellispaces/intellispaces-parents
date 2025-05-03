@@ -4,7 +4,7 @@
     <description>Intellispaces parent pom</description>
 
     <parent>
-        <groupId>tech.intellispaces</groupId>
+        <groupId>tech.intellispaces.commons</groupId>
         <artifactId>intellispaces-parents</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
