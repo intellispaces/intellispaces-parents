@@ -122,7 +122,12 @@
                 <version>11.0.24</version>
             </dependency>
 
-            <!-- Configuration -->
+            <!-- Parsing -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>2.19.0</version>
+            </dependency>
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
